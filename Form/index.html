@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    
+    <form>
+        <h1>Student Registration Form</h1>
+        <div>
+            <label for="img">Upload Student Image </label>
+            <input type="file" id="img">
+        </div>
+        <div>
+            <label for="studentname">Student Name </label>
+            <input type="text" id="studentname" placeholder="Full Name"> <br>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="select_gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="select_gender" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="select_gender" id="Other">
+            <label for="Other">Other</label>
+        </div>
+
+        <div>
+            <label for="fathername">Father's Name </label>
+            <input type="text" id="fathername" placeholder="Father Name"> <br>
+
+            <label for="mothername">Mother's Name </label>
+            <input type="text" id="mothername" placeholder="Mother Name"> <br>
+        </div>
+
+        </div>
+        <div>
+            <label for="MNo">Mobile Number</label>
+            <input type="tel" id="MNo" placeholder="01*********"> <br>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="yourmail@gmail.com"> <br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob"> <br>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Address</legend>
+                <label for="pre_add">Present Address</label>
+                <textarea id="pre_add" placeholder="Write your Present Address"></textarea> <br>
+                <label for="per_add">Permanent Address</label>
+                <textarea id="per_add" placeholder="Write your Permanent Address"></textarea>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="course">Select a Course (which you want) : </label>
+            <select id="course">
+                <option value="select" selected disabled>--Select One--</option>
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="civil">Civil</option>
+                <option value="bba">BBA</option>
+                <option value="eco">Economics</option>
+                <option value="eng">English</option>
+                <option value="law">Law</option>
+            </select>
+        </div>
+
+        <div>
+            <label> Education : </label> <br>
+            <table border="1" style="border-collapse: collapse;">
+                <thead>
+                    <th>Exam Name</th>
+                    <th>Institution Name</th>
+                    <th>Year</th> 
+                    <th>GPA</th>
+                    <th>Board</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><label>JSC</label></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>SSC</label></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>HSC</label></td>
+                        <td><input type="text"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <label for="hobby">Hobby :</label> <br>
+            <input type="checkbox" name="hobby" id="cri">
+            <label for="cri">Cricket</label>
+            <input type="checkbox" name="hobby" id="foot">
+            <label for="foot">Football</label>
+            <input type="checkbox" name="hobby" id="pro">
+            <label for="pro">Programming</label>
+            <input type="checkbox" name="hobby" id="oth">
+            <label for="oth">Others</label>
+        </div>
+
+
+        <div>
+            <button type="button" onclick="alert('Submit Successfully. This is a practise form.')">Submit</button>
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>
