@@ -1,0 +1,79 @@
+.h-title{
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #06C167;
+}
+
+.button{
+    background-color: #06C167;
+    padding: 10px 30px;
+    display: inline-block;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+.button a i{
+    color: #fff;
+    position: relative;
+    left: 15px;
+    top: 1px;
+}
+
+.foot-para{
+    color:rgba(29, 29, 31, 1);
+}
+
+.f-header {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.f-about li a{
+    color:rgba(29, 29, 31, 1);
+    text-decoration: none;
+}
+.f-company li a{
+    color:rgba(29, 29, 31, 1);
+    text-decoration: none;
+}
+
+.menu a{
+    color:rgba(29, 29, 31, 1);
+    text-decoration: none;
+}
+
+.hero-title, .benefit-title, .stars-title, .product-title{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stars-highlight{
+    color: #06C167;
+}
+.num2-highlight{
+    color: #06C167;
+}
+.num1-highlight{
+    color: rgba(118, 118, 117, 1);
+    ;
+}
+.p-button {
+    border: 3px solid #06C167;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.p-button a{
+    border: #06C167;
+    color: #06C167;
+    text-decoration: none;
+}
+.rat i{
+    color: #06C167;
+}
+.product-box i{
+    color: #06C167;
+}
+.b-para i{
+    color: #06C167;
+}
+
+
