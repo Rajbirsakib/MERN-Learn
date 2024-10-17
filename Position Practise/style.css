@@ -1,0 +1,59 @@
+.body{
+    height: 3000px;
+}
+.parent{
+    position: relative;
+    margin: 0 auto;
+    height: 600px;
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid white;
+}
+.sit{
+    position: absolute;
+    right: 25%;
+    bottom: 25%;
+}
+.one{
+    position: absolute;
+    left: 30%;
+    bottom: 52%;
+}
+.two{
+    position: absolute;
+    left: 34%;
+    top: 25%
+}
+.three{
+    position: absolute;
+    right: 45%;
+    top: 18%
+}
+.four{
+    position: absolute;
+    right: 33%;
+    top: 24%
+}
+.five{
+    position: absolute;
+    right: 30%;
+    bottom: 53%;
+}
+.rightone{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+}
+.righttwo{
+    position: absolute;
+    right: 25%;
+    bottom: 40%;
+}
+.para{
+    color: tomato;
+    display: inline-block;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10%;
+    right: 38%;
+}
