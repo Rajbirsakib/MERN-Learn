@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --orange: #e96c28;
+    --white: #fff;
+    --black: #000;
+    --grey: #636363;
+    --light-grey: #c4c4c4;
+    --dawn-pink: #fae7e5;
+    --frosted-mint: #dcfef9;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Header Section  */
+/* Nav bar Section */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    z-index: 6;
+}
+.logo-txt{
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: bold;
+}
+.logo-txt-black{
+    color: var(--black);
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+.navlinks{
+    color: var(--black);
+    font-weight: 500;
+}
+
+.active, .navlinks:hover{
+    color: var(--orange);
+}
+.icon-link{
+    background: var(--orange);
+    width: 2.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: .5rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.3rem;
+    transition: .3s ease-in-out;
+}
+.icon-link:hover{
+    transform: translateY(-10%);
+}
+.fa-solid, .fa-brands{
+    font-size: 1.1rem;
+    color: var(--white);
+}
+header{
+    height: 13vh;
+}
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist li a{
+    position: relative;
+}
+.navlist li a::after{
+    content: "";
+    background: var(--orange);
+    position: absolute;
+    height: .15rem;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+    transform-origin: right;
+}
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+.burger{
+    background: var(--black);
+    width: 2.3rem;
+    height: .2rem;
+    margin: .3rem;
+    border-radius: 2rem;
+}
+
+
+/* Main Section */
+/* Hero Section */
+.hero-section{
+    height: calc(100vh - 13vh);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    flex: 1;
+}
+.image-container{
+    flex: 1; 
+    position: relative; 
+}
+.image-container::before{
+    content: "";
+    position: absolute;
+    background: var(--dawn-pink);
+    top: 50%;
+    right: 0;
+    width: 35rem;
+    height: 30vh;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin-top: 1rem;
+}
+.watch{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+p{
+    color: var(--grey);
+    margin-block: 1.5rem;
+    max-width: 500px;
+}
+.btn-container{
+    display: flex;
+    gap: 1.5rem
+}
+button, .form-btn{
+    color: var(--white);
+    background: var(--orange);
+    border: .1rem solid var(--orange);
+    padding: .55rem 1.5rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+}
+button:hover, .form-btn:hover{
+    background: var(--white);
+    color: var(--orange);
+    border-color: var(--orange);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+[data-type="bordered-btn"]:hover{
+    background: var(--orange);
+    color: var(--white); 
+    border-color: var(--orange); 
+    transition: background 0.3s ease, color 0.3s ease;
+}
+[data-type="bordered-btn"]{
+    background: transparent;
+    color: var(--orange);
+}
+.mint-glow{
+    position: relative;
+} 
+.mint-glow::before{
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 20rem;
+    height: 100%;
+    background: var(--frosted-mint);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);
+}
+
+/* Store Section */
+.other-section{
+    padding-block: 5rem;
+}
+.row-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.column-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 1.8rem;
+}
+[data-type="centered-txt"]{
+    text-align: center;
+    max-width: 600px;
+    margin-block: .5rem;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+.card{
+    width: 15rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: rgb(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: .2s ease-in-out;
+}
+[data-type="category"]{
+    padding-block: 2.5rem;
+}
+.card:hover{
+    box-shadow: rgb(50, 50, 93, 0.25) 0px 13px 27px -5px, rgb(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* About Section */
+
+/* Featured Food */
+h4{
+    font-weight: 600;
+}
+[data-type="item"]{
+    padding-bottom: 1.3rem;
+    overflow: hidden;
+}
+.image-part{
+    width: 100%;
+    height: 23vh;
+}
+.image-part img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail{
+    margin-top: 1rem;
+}
+
+/* App Section */
+.app-img{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 4.2rem;
+}
+
+/* Best Food Section */
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.rating img{
+    width: 6rem;
+}
+.rating h4{
+    font-size: 1.3rem;
+    color: var(--orange);
+}
+
+/* Newsletter Section */
+.form-container{
+    margin-top: 1.2rem;
+    border: .02rem solid var(--light-grey);
+    height: 3.5rem;
+    border-radius: 5rem;
+    padding: .25rem;
+}
+input[type="email"]{
+    height: 100%;
+    border: none;
+    border-radius: 5rem 0 0 5rem;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+input:focus{
+    outline: none;
+}
+
+
+/* Footer Section */
+footer{
+    margin-bottom: 1rem;
+    isolation: isolate;
+}
+.footer-links{
+    font-size: .95rem;
+    color: var(--grey);
+}
+.footer-links:hover{
+    color: var(--orange);
+}
+.footer-list{
+    margin-top: 2rem;
+}
+.footer-list li{
+    margin-block: .5rem;
+}
+[data-type="balanced-txt"]{
+    max-width: 300px;
+}
+footer .card-container{
+    justify-content: space-between;
+}
+
+.line{
+    width: 100%;
+    height: .09rem;
+    background: var(--light-grey);
+    margin-block: 2rem;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 680px){
+    .container{
+        width: 90%;
+    }
+    .image-container{
+        display: none;
+    }
+    h1{
+        font-size: 2.8rem;
+    }
+    .nav-icons{
+        display: none;
+    }
+    .btn-container{
+        justify-content: center;
+        /* align-items: center; */
+    } 
+    .hamburger{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--dawn-pink);
+        height: 100vh;
+        width: 60%;
+        z-index: 5;
+        transform: translate(-100%);
+        transition: .5s ease-in-out;
+    }
+    .navlist-active{
+        transform: translate(0%);
+    }
+}
+
+
+/* Scroll Bar Change Theme */
+
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+  /* The track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray background */
+}
+
+  /* The thumb (scrollable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Darker gray */
+    border-radius: 6px; /* Rounded edges */
+}
+
+  /* On hover, change the thumb color */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Even darker gray */
+}

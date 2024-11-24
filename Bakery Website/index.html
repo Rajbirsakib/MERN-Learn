@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <!-- Nav bar Section -->
+    <header>
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="#" class="logo-txt">Past<span class="logo-txt-black">rya.</span></a>
+            </div>
+            <ul class="navlist" id="navlist">
+                <li><a href="#home" class="navlinks active">Home</a></li>
+                <li><a href="#about" class="navlinks">About</a></li>      
+                <li><a href="#menu" class="navlinks">Menu</a></li>
+                <li><a href="#restaurant" class="navlinks">Restaurant</a></li>
+                <li><a href="#order" class="navlinks">Order</a></li>
+                <li><a href="#contact" class="navlinks">Contact</a></li>
+            </ul>
+
+           
+            <div class="nav-icons">
+                <a href="#" class="icon-link"><i class="fa-solid fa-user"></i></a>
+                <a href="#" class="icon-link"><i class="fa-solid fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <div class="burger"></div>
+                <div class="burger"></div>
+                <div class="burger"></div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <!-- Main Section -->
+    
+    <main >
+        <!-- Hero Section -->
+        <section class="hero-section container mint-glow" id="home">
+
+            <div class="content">
+                <div class="watch">
+                    <a href="#" class="icon-link"><i class="fa-solid fa-play"></i></a>
+                    <h3>Watch Video</h3>
+                </div>
+                <h1>The Perfect Baked Cake Everyday!</h1>
+                <p>Indulge in freshly baked perfection every day! From decadent cakes to flaky pastries, our bakery crafts treats to delight your taste buds and warm your heart.</p>
+                <div class="btn-container">
+                    <button>Read More</button>
+                    <button data-type="bordered-btn">Order Now</button>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="./images/cake.png" alt="Cake">
+            </div>
+        </section>
+
+        <!-- Store Section -->
+        <section class="other-section container" id="restaurant">
+            <div class="column-container">
+                <h2>Welcome to Our Store</h2>
+                <p data-type="centered-txt">Step into our bakery, where every treat is made with love. Explore a delightful array of cake, cookie, sandwich and bread crafted just for you.</p>
+                <div class="card-container">
+                    <div class="card" data-type="category">
+                        <img src="./images/pastery.png" alt="Pastery">
+                        <h3>Cake</h3>
+                    </div>
+                    <div class="card" data-type="category">
+                        <img src="./images/cookie.png" alt="Cookie">
+                        <h3>Cookie</h3>
+                    </div>
+                    <div class="card" data-type="category">
+                        <img src="./images/sandwich.png" alt="Sandwich">
+                        <h3>Sandwich</h3>
+                    </div>
+                    <div class="card" data-type="category">
+                        <img src="./images/bread.png" alt="Bread">
+                        <h3>Bread</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="other-section container" id="about">
+            <div class="row-container">
+                <div class="image-container">
+                    <img src="./images/cupcake.jpg" alt="Cupcake">
+                </div>
+                <div class="content">
+                    <h2>About <br>Pastrya Bakery</h2>
+                    <p>Welcome to Pastrya, where every bite is a celebration of flavor! We specialize in crafting artisanal pastries, cakes and breads with love and precision.</p>
+                    <p>From flaky croissants to decadent desserts, enjoy fresh, high-quality treats that delight your senses.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Food -->
+        <section class="other-section container" id="menu">
+            <div class="column-container">
+                <h2>Our Featured Food</h2>
+                <p data-type="centered-txt">Discover our signature creations, from melt-in-your-mouth pastries to elegantly crafted cakes. Each bite is a perfect blend of flavor, freshness and artistry.</p>
+                <div class="card-container">
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/birthday cake.jpg" alt="Birthday Cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 15.00</h4>
+                            <h4>Birthday Cake</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/muffins.jpg" alt="Muffins">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 12.10</h4>
+                            <h4>Muffins</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/waffles.jpg" alt="Waffles">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 16.50</h4>
+                            <h4>Waffles</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/pancake.jpg" alt="Pancake">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 11.90</h4>
+                            <h4>Pancake</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/piece cake.jpg" alt="Piece Cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 12.00</h4>
+                            <h4>Piece Cake</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/cookies.jpg" alt="Chocolate Cookies">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 9.00</h4>
+                            <h4>Chocolate Cookies</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/raspberry cake.jpg" alt="Raspberry Cake">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 16.50</h4>
+                            <h4>Raspberry Cake</h4>
+                        </div>
+                    </div>
+                    <div class="card" data-type="item">
+                        <div class="image-part">
+                            <img src="./images/donut.jpg" alt="Donut">
+                        </div>
+                        <div class="detail">
+                            <h4>$ 8.50</h4>
+                            <h4>Donut</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- App Section -->
+        <section class="other-section container">
+            <div class="row-container">
+                <div class="content">
+                    <h2>App is soon <br>on App Store</h2>
+                    <p>Exciting news! The Pastrya app is coming soon to the App Store and Play Store. Order your favorite treats effortlessly, explore our menu, and enjoy exclusive app-only offers and rewards!</p>
+                    <div class="app-img">
+                        <img src="./images/app store.png" alt="App Store">
+                        <img src="./images/play store.png" alt="Play Store">
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="./images/bakery app.png" alt="Bakery App">
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Best Food Section -->
+        <section class="other-section container" id="order">
+            <div class="row-container">
+                <div class="image-container">
+                    <img src="./images/creamy pancake.png" alt="Creamy Pancake">
+                </div>
+                <div class="content">
+                    <h2>Best Sell <br>Food In This Week!</h2>
+                    <div class="rating">
+                        <h4>$ 22.50</h4>
+                        <img src="./images/five star.png" alt="Five Star">
+                    </div>
+                    <p>This week’s star is our Creamy Pancake, a fluffy delight topped with rich cream and syrup, loved for its irresistible flavor and melt-in-your-mouth texture.</p>
+                    <p>Perfect for breakfast or dessert, this treat has become a customer favorite. Try it today!</p>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Newsletter Section -->
+
+        <section class="other-section container">
+            <div class="column-container">
+                <h2>Subscribe Our Newsletter</h2>
+                <p data-type="centered-txt">Subscribe to our newsletter for the latest updates on new arrivals, special offers, and exclusive bakery deals. Stay connected and never miss out on deliciousness!</p>
+                <form class="form-container">
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Email Address">
+                    <input type="submit" value="Subscribe" class="form-btn">
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer>
+
+        <div class="column-container container mint-glow" id="contact">
+            <div class="card-container">
+                <div class="column">
+                    <div class="logo">
+                        <a href="#" class="logo-txt">Past<span class="logo-txt-black">rya.</span></a>
+                    </div>
+                    <p data-type="balanced-txt">Freshly baked with love every day. Visit us for the finest pastries, cakes, and treats. Thank you for choosing Pastrya!</p>
+                    <div class="icons">
+                        <a href="#" class="icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="icon-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="icon-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h4>Resources</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-links">Resource</a></li>
+                        <li><a href="#" class="footer-links">Contact Us</a></li>
+                        <li><a href="#" class="footer-links">FAQ</a></li>
+                        <li><a href="#" class="footer-links">Email Support</a></li>
+                        <li><a href="#" class="footer-links">API Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Menu</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-links">Cup Cake</a></li>
+                        <li><a href="#" class="footer-links">Cookies</a></li>
+                        <li><a href="#" class="footer-links">Biscuits</a></li>
+                        <li><a href="#" class="footer-links">Sandwich</a></li>
+                        <li><a href="#" class="footer-links">Bread</a></li>
+                        <li><a href="#" class="footer-links">Raspberry Cake</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Services</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-links">Home Delivery</a></li>
+                        <li><a href="#" class="footer-links">Office Delivery</a></li>
+                        <li><a href="#" class="footer-links">Event</a></li>
+                        <li><a href="#" class="footer-links">Birthday</a></li>
+                        <li><a href="#" class="footer-links">Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4>Contact</h4>
+                    <ul class="footer-list">
+
+                        <li><a href="#" class="icon-link"><i class="fa-solid fa-location-dot bg-org"></i></a>
+                            <a href="#" class="footer-links">Dhaka, Bangladesh</a>
+                        </li>
+                        <li><a href="#" class="icon-link"><i class="fa-solid fa-location-dot bg-org"></i></a>
+                            <a href="#" class="footer-links">+8801912345678</a>
+                        </li>
+                        <li><a href="#" class="icon-link"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" class="footer-links">info@example.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <h4>&copy;Copyright Pastrya All Reserved</h4>
+        </div>
+    </footer>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
