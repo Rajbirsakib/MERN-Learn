@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="px-20 py-7">
+    <header>
+        <nav class="navbar text-xl h-[41px] flex justify-between ">
+            <h1 class="font-bold text-[#5E3AEE]">&lt;/reboot13&gt;</h1>
+            <div class="navlist">
+                <ul class="flex gap-10">
+                    <li><a href="#" class="font-bold">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="h-[547px] bg-[#F0F0F5] flex items-center justify-around my-7">
+        <div class="content space-y-5">
+            <h1 class="text-4xl font-bold">Hello, <br><span class="text-[#5E3AEE]">I am Krutik Raut.</span></h1>
+            <h1 class="text-xl font-bold text-[#696969]">Web Designer/Developer</h1>
+            <div class="hero-btn space-x-4 space-y-6">
+                <button class="bg-[#ffffff] w-[120px] h-[40px] drop-shadow-md font-bold">Contact</button>
+                <button class="bg-[#5E3AEE] text-[#ffffff] w-[120px] h-[40px] drop-shadow-md font-bold">Projects</button>
+            </div>
+        </div>
+        <div>
+            <img class="w-[434px] h-[408px]" src="./images/laptop 1.png" alt="Laptop">
+        </div>
+    </section>
+
+    <section class="h-[191px] my-32 border-y-4 flex items-center justify-evenly">
+        <div class="project-info flex items-center justify-between w-full">
+            <div class="content text-center">
+                <h1 class="text-5xl font-bold">50+</h1>
+                <p class="text-[#B8BFBF] text-xl">Projects Completed</p>
+            </div>
+            <div class="content text-center">
+                <h1 class="text-5xl font-bold">45+</h1>
+                <p class="text-[#B8BFBF] text-xl">Github Repository</p>
+            </div>
+            <div class="content text-center">
+                <h1 class="text-5xl font-bold">5+</h1>
+                <p class="text-[#B8BFBF] text-xl">Years of Experience</p>
+            </div>
+            <div class="content text-center">
+                <h1 class="text-5xl font-bold">700+</h1>
+                <p class="text-[#B8BFBF] text-xl">Youtube Subscribers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-[493px] bg-[#0F1221] flex items-center justify-around my-7">
+        <div class="content space-y-5">
+            <div class="w-[150px] h-[27px] bg-[#5E3AEE]"></div>
+            <h1 class="text-4xl font-bold text-[#ffffff]">A Bit About Me...</h1>
+            <p class="text-xl font-semibold text-[#ffffff]">Hello, My name is Krutik Raut AKA reboot13. <br>I am a CSE  Undergraduate at Parul University. <br>I'm currently learning UI/UX development. Checkout my <br>projects on github. <br><span class="text-[#5E3AEE]  text-2xl space-y-2">@reboot13-git</span></p>
+            
+        </div>
+        <div class="self-start">
+            <img class="w-[485.2px] h-[590.33px]" src="./images/Mockup.png" alt="Laptop">
+        </div>
+    </section>
+
+    <h1 class="text-[#5E3AEE] text-4xl font-bold mt-32">Skills</h1>
+    <section class="h-[217px] my-4 py-4 m-auto">
+        
+        <div class="flex justify-around text-black font-semibold text-xl">
+            <ul class="space-y-10">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <ul class="space-y-10">
+                <li>PHP</li>
+                <li>SCSS</li>
+                <li>Typescript</li>
+            </ul>
+            <ul class="space-y-10">
+                <li>SQL</li>
+                <li>C/C++</li>
+                <li>Node Js</li>
+            </ul>
+            <ul class="space-y-10">
+                <li>Python</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="h-[576px] bg-[#5E3AEE] flex items-center justify-around mt-32">
+        <div>
+            <div class="contect space-y-2">
+                <h1 class="text-4xl font-bold text-[#ffffff]">Contact</h1>
+                <p class="text-xl font-semibold text-[#ffffff] ">Want a website for your brand and business? <br>I design what you desire....</p>
+                <img class="w-[533px] h-[300px]" src="./images/hshs 1.png" alt="Three Plane">
+            </div>
+        </div>
+        <div>
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-[#ffffff] font-bold mb-2 text-xl">Name</label>
+                    <input type="text" name="name" id="name" class="w-[583px] h-[53px]">
+                </div>
+                <div>
+                    <label for="email" class="block text-[#ffffff] font-bold mb-2 text-xl">Email</label>
+                    <input type="email" name="email" id="email" class="w-[583px] h-[53px]">
+                </div>
+                <div>
+                    <label for="message" class="block text-[#ffffff] font-bold mb-2 text-xl">Message</label>
+                    <textarea name="message" id="message" class="w-[583px] h-[141px]"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="w-[583px] h-[53px] bg-[#ffffff] font-bold text-xl">
+                </div>
+            </form>
+            
+            
+        </div>
+    </section>
+
+    <footer class="h-[35px] text-center mt-10">
+        <h1 class="text-[#696969] text-xl ">@reboot13-dev</h1>
+    </footer>
+    
+</body>
+</html>
